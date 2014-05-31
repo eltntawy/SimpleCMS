@@ -37,8 +37,8 @@
 							<h3>${article.name}</h3>
 							<p class="article-div">${article.description}</p>
 							<p>
-								<a href="#" class="btn btn-primary">Action</a> <a href="#"
-									class="btn">Action</a>
+								<a href="#" class="btn btn-primary">Action</a> 
+								<a href="#" class="btn">Action</a>
 							</p>
 						</div>
 					</div>
