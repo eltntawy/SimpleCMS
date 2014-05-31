@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 31-May-2014 02:34:38 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="com.simple.cms.model.Article" table="article" catalog="cms">
+        <id name="articleId" type="java.lang.Integer">
+            <column name="ARTICLE_ID" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="user" class="com.simple.cms.model.User" fetch="select">
+            <column name="USER_USER_ID" not-null="true" />
+        </many-to-one>
+        <property name="number" type="int">
+            <column name="NUMBER" not-null="true" unique="true">
+                <comment>??? ????? ?????</comment>
+            </column>
+        </property>
+        <property name="name" type="string">
+            <column name="NAME" length="45">
+                <comment>??? ?????</comment>
+            </column>
+        </property>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" length="1000" />
+        </property>
+        <property name="picture" type="string">
+            <column name="PICTURE" length="100">
+                <comment>???? ?????</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>
