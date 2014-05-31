@@ -290,54 +290,10 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="brand" href="${pageContext.request.contextPath}/index.jsp">Egypt Technology</a>
+                    <a class="brand" href="${pageContext.request.contextPath}/index.jsp">Simple CMS</a>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li class="active"><a href="${pageContext.request.contextPath}/index.jsp">Home</a></li>
-
-<%--                             <c:if test="${sessionScope.user.userRule.name eq 'Admin'}"> --%>
-                                
-<!--                                 <li class="dropdown"> -->
-<!--                                     <a href="" class="dropdown-toggle" data-toggle="dropdown">Invoice <b class="caret"></b></a> -->
-<!--                                     <ul class="dropdown-menu"> -->
-<%--                                         <li><a href="${pageContext.request.contextPath}/pages/User/Invoices.jsp">Invoice List</a></li> --%>
-<%--                                         <li> <a href="${pageContext.request.contextPath}/pages/User/addInvoice.jsp">Add Invoice</a></li> --%>
-
-<!--                                         <li class="divider"></li> -->
-<!--                                         <li class="nav-header">Nav header</li> -->
-
-<!--                                     </ul> -->
-<!--                                 </li> -->
-<!-- <!----------------------------------------------------------------------------------------------------------------------------------->                                 -->
-<!--                                 <li class="dropdown"> -->
-<!--                                     <a href="" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a> -->
-<!--                                     <ul class="dropdown-menu"> -->
-<%--                                         <li><a href="${pageContext.request.contextPath}/pages/Admin/Products">Product List</a></li> --%>
-<%--                                         <li> <a href="${pageContext.request.contextPath}/pages/Admin/addProduct.jsp">Add Product</a></li> --%>
-
-<!--                                         <li class="divider"></li> -->
-<!--                                         <li class="nav-header">Nav header</li> -->
-
-<!--                                     </ul> -->
-<!--                                 </li> -->
-<!-- <!-----------------------------------------------------------------------------------------------------------------------------------> -->
-<!--                                 <li class="dropdown"> -->
-<!--                                     <a href="" class="dropdown-toggle" data-toggle="dropdown">Providers <b class="caret"></b></a> -->
-<!--                                     <ul class="dropdown-menu"> -->
-<%--                                         <li><a href="${pageContext.request.contextPath}/pages/Admin/Providers">Provider List</a></li> --%>
-<%--                                         <li> <a href="${pageContext.request.contextPath}/pages/Admin/addProvider.jsp">Add Provider</a></li> --%>
-
-<!--                                         <li class="divider"></li> -->
-<!--                                         <li class="nav-header">Nav header</li> -->
-
-<!--                                     </ul> -->
-<!--                                 </li> -->
-<%--                             </c:if> --%>
-
-
-
-<!--                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>-->
 
                         </ul>
                         <c:choose >
@@ -368,9 +324,9 @@
                                             <!-- Main hero unit for a primary marketing message or call to action -->
                                             <div class="hero-unit">
                                                 <!--<img src="${pageContext.request.contextPath}/resources/img/964920_521159731254594_309959603_o.jpg" alt="" />-->
-                                                <h1>Egypt Tech.</h1>
-                                                <p>Exchange your old PC with new one.</p>
-                                                <p><a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+                                                <h1>Simple CMS.</h1>
+                                                <p>Simple Content Management System with Spring MVC.</p>
+                                                <p><a class="btn btn-primary btn-large" href="ArticleView">View articles &raquo;</a></p>
                                             </div>
                                             
                                             

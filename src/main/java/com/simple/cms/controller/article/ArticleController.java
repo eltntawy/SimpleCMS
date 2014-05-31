@@ -21,14 +21,18 @@ public class ArticleController {
 	
 
 	@RequestMapping ("ArticleSave")
-	public ModelAndView saveArticle(@RequestParam (required = true,value="article" )String article,@RequestParam (required=true,value="name") String name,
+	public ModelAndView saveArticle(@RequestParam (required = true,value="article" )StringBuilder article,@RequestParam (required=true,value="name") String name,
 			HttpServletRequest request, HttpServletResponse response) {
 		
 		Enumeration<String> sEnumeration = request.getParameterNames();
 		
+		StringBuilder articleStringBuilder = new StringBuilder();
+		
 		while (sEnumeration.hasMoreElements()) {
-			System.out.print(sEnumeration.nextElement() + " : ");
-			System.out.println(request.getParameter(sEnumeration.nextElement()));
+			String para = sEnumeration.nextElement();
+			System.out.print(para + " : ");
+			System.out.println(request.getParameter(para));
+			articleStringBuilder.append(request.getParameter(para));
 		}
 		
 		Article articleNew = new Article();
@@ -37,7 +41,7 @@ public class ArticleController {
 		
 		articleNew.setName(name);
 		
-		articleNew.setDescription(article);
+		articleNew.setDescription(articleStringBuilder.toString());
 		articleNew.setUser(currentUser);
 		
 		ArticleService articleService = new ArticleService();

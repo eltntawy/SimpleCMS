@@ -9,7 +9,7 @@
 <br><br><br><br>
 <legend></legend>
 <footer>
-    <p>&copy; Egypt Technology Company 2014</p>
+    <p>&copy; All Rights Reserved</p>
 </footer>
 
 </div> <!-- /container -->

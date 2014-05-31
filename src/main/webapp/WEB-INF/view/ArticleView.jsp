@@ -9,46 +9,52 @@
 <%-- <%@include file="${pageContext.request.contextPath}/resources/Header.jsp" %> --%>
 <jsp:include page="../../resources/Header.jsp" />
 
-<<style>
-<!--
-.article-div {
-   overflow: scroll;
-   height: 160pt;
-}
--->
-</style>
-
 <!-- Thumbnails ================================================== -->
 <h2>Articles</h2>
-<p>grate writers for grate readers.</p>
+<div class="row" >
 
-<div class="row-fluid">
-	<section id="thumbnails">
 
-		<ul class="thumbnails">
-			<c:forEach var="article" items="${articleList}">
+<c:forEach var="article" items="${articleList}">
+<div class="thumbnail span6">
+        <div >
+          <h2 class="featurette-heading">${article.name} <span class="text-muted"></span></h2>
 
-				<li class="span4 ">
-					<div class="thumbnail ">
-						<img
-							src="${pageContext.request.contextPath}/resources/img/blank.png"
-							class="img-">
-						<div class="caption">
-							<h3>${article.name}</h3>
-							<p class="article-div">${article.description}</p>
-							<p>
-								<a href="#" class="btn btn-primary">Action</a> 
-								<a href="#" class="btn">Action</a>
-							</p>
-						</div>
-					</div>
-				</li>
-			</c:forEach>
-		</ul>
-	</section>
+          ${article.description}
+
+        </div>
+
+      </div>
+      </c:forEach>
+
+
+
 </div>
+      
 
-<hr>
+      
+      
+<!-- <div class="row"> -->
+<!-- 	<section id="thumbnails"> -->
+
+<!-- 		<ul class="thumbnails"> -->
+<%-- 			<c:forEach var="article" items="${articleList}"> --%>
+
+<!-- 				<li class="span4  row featurette"> -->
+<!-- 					<div class="thumbnail "> -->
+<%-- <%-- 						<img src="${pageContext.request.contextPath}/resources/img/blank.png" class="img-">  --%>
+<!-- 						<div class="caption"> -->
+<%-- 							<h1>${article.name}</h1> --%>
+<%-- 							<p class="article-div">${article.description}</p> --%>
+<!-- 							<p></p> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 				</li> -->
+<%-- 			</c:forEach> --%>
+<!-- 		</ul> -->
+<!-- 	</section> -->
+<!-- </div> -->
+
+
 
 <%-- <c:import url="${pageContext.request.contextPath}/resources/Footer.jsp"></c:import> --%>
 <%-- <%@include file="${pageContext.request.contextPath}/resources/Footer.jsp" %> --%>
